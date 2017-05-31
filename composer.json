@@ -1,0 +1,9 @@
+{
+    "name": "stackexchange/stackexchange_lockattributes",
+    "type": "magento-module",
+    "description": "This extension adds availability to prevent product attributes from editing in admin backend.",
+    "homepage": "https://magento.stackexchange.com/questions/784/read-only-product-backend-attribute",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

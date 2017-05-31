@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <StackExchange_LockAttributes>
+            <version>1.0.0</version>
+        </StackExchange_LockAttributes>
+    </modules>
+    <global>
+        <helpers>
+            <stackexchange_lockattributes>
+                <class>StackExchange_LockAttributes_Helper</class>
+            </stackexchange_lockattributes>
+        </helpers>
+        <models>
+            <stackexchange_lockattributes>
+                <class>StackExchange_LockAttributes_Model</class>
+            </stackexchange_lockattributes>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <catalog_product_edit_action>
+                <observers>
+                    <lock_attributes>
+                        <type>singleton</type>
+                        <class>stackexchange_lockattributes/observer</class>
+                        <method>lockProductAttributes</method>
+                    </lock_attributes>
+                </observers>
+            </catalog_product_edit_action>
+        </events>
+    </adminhtml>
+</config>

@@ -2,7 +2,7 @@
 <config>
     <modules>
         <StackExchange_LockAttributes>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </StackExchange_LockAttributes>
     </modules>
     <global>
@@ -29,5 +29,14 @@
                 </observers>
             </catalog_product_edit_action>
         </events>
+        <translate>
+            <modules>
+                <stackexchange_lockattributes>
+                    <files>
+                        <default>StackExchange_LockAttributes.csv</default>
+                    </files>
+                </stackexchange_lockattributes>
+            </modules>
+        </translate>
     </adminhtml>
 </config>

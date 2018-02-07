@@ -29,6 +29,7 @@ class StackExchange_LockAttributes_Model_System_Config_Source_Product_Attributes
 
             $optionsArray = array();
             foreach ($options as $option) {
+                /* @var Mage_Catalog_Model_Resource_Eav_Attribute $option */
                 $optionsArray[] = array(
                     'label' => $option->getFrontendLabel(),
                     'value' => $option->getAttributeCode()

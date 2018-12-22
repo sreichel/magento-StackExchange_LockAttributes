@@ -7,9 +7,9 @@ This extension adds availability to prevent product attributes from editing in a
 [![Test Coverage](https://api.codeclimate.com/v1/badges/de5eb4d457411e58c485/test_coverage)](https://codeclimate.com/github/sreichel/magento-StackExchange_LockAttributes/test_coverage)
 
 ## Facts
-  - version: 1.1.0
-  - extension key: StackExchange_LockAttributes
-  - [extension on GitHub](https://github.com/sreichel/magento-StackExchange_LockAttributes)
+- version: 1.1.0
+- extension key: StackExchange_LockAttributes
+- [extension on GitHub](https://github.com/sreichel/magento-StackExchange_LockAttributes)
 
 ### Description
 [Read-Only Product Backend attribute](https://magento.stackexchange.com/questions/784/read-only-product-backend-attribute)
@@ -23,34 +23,34 @@ This extension adds availability to prevent product attributes from editing in a
 > `Varien_Data_Form_Element_Abstract::serialize($attributes = array(), $valueSeparator='=', $fieldSeparator=' ', $quote='"')`
 
 ### Requirements
-  - PHP >= 5.4.0 
+- PHP >= 5.4.0 
 
 ### Compatibility
-  - Magento >= 1.5
+- Magento >= 1.5
 
 #### Installation Instructions
-  - via modman
+- via modman
 ```
 modman clone https://github.com/sreichel/magento-StackExchange_LockAttributes.git
 ```
-  - via composer
+- via composer
 ```
 composer require mse-sv3n/lock-attributes
 ```
 
 #### Uninstallation
-  - via modman
+- via modman
 ```
 modman remove magento-stackexchange-lockattributes
 ```
-  - via composer
+- via composer
 ```
 composer remove mse-sv3n/lock-attributes
 ```
 
 ### Usage
- 1. get to config section and set attributes you want to lock
- 2. set ACL permission for uses that are still allowed to edit
+1. get to config section and set attributes you want to lock
+2. set ACL permission for uses that are still allowed to edit
 
 ### Support
 If you have any issues with this extension, open an issue on [GitHub](https://github.com/sreichel/magento-StackExchange_LockAttributes/issues).

@@ -8,7 +8,8 @@
         {
             "name": "Sven Reichel",
             "homepage":"https://magento.stackexchange.com/users/46249/sv3n",
-            "email": "github-sr@hotmail.com"
+            "email": "github-sr@hotmail.com",
+            "role": "Author/Maintainer"
         }
     ],
     "require": {

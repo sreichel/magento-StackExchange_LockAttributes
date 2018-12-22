@@ -1,4 +1,4 @@
-# StackExchange LockAttributes Magento 1 Extension
+# LockAttributes Magento 1 Extension
 
 This extension adds availability to prevent product attributes from editing in admin backend.
 

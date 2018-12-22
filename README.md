@@ -9,7 +9,7 @@ This extension adds availability to prevent product attributes from editing in a
 ## Facts
 - version: 1.1.0
 - extension key: StackExchange_LockAttributes
-- [extension on GitHub](https://github.com/company/Company_ExampleExtension)
+- [extension on GitHub](https://github.com/sreichel/magento-StackExchange_LockAttributes)
 
 ### Description
 [Read-Only Product Backend attribute](https://magento.stackexchange.com/questions/784/read-only-product-backend-attribute)
@@ -42,7 +42,7 @@ composer require mse-sv3n/lock-attributes
 #### Uninstallation
 - via modman
 ```
-modman modman remove magento-stackexchange-lockattributes
+modman remove magento-stackexchange-lockattributes
 ```
 - via composer
 ```

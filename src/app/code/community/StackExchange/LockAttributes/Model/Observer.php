@@ -7,6 +7,10 @@
  * @package     StackExchange_LockAttributes
  */
 
+/**
+ * Class StackExchange_LockAttributes_Model_Observer
+ * @SuppressWarnings(PHPMD.CamelCaseClassName)
+ */
 class StackExchange_LockAttributes_Model_Observer
 {
     /**
@@ -17,13 +21,14 @@ class StackExchange_LockAttributes_Model_Observer
      */
     public function lockProductAttributes(Varien_Event_Observer $observer)
     {
-        if (!$this->_isAllowed()) {
-            /* @var Mage_Catalog_Model_Product $product */
+        if ($this->isNotAllowed()) {
             $product = $observer->getProduct();
-            $attributes = explode(',', Mage::getStoreConfig('catalog/backend/lock_attributes', $product->getStoreId()));
-            if (count($attributes)) {
-                foreach ($attributes as $attributeCode) {
-                    $product->lockAttribute($attributeCode);
+            if ($product instanceof Mage_Catalog_Model_Product) {
+                $attributes = Mage::helper('stackexchange_lockattributes')->getLockedAttributes($product->getStoreId());
+                if (count($attributes)) {
+                    foreach ($attributes as $attributeCode) {
+                        $product->lockAttribute($attributeCode);
+                    }
                 }
             }
         }
@@ -32,8 +37,8 @@ class StackExchange_LockAttributes_Model_Observer
     /**
      * Check admin permissions for locked attributes
      */
-    protected function _isAllowed()
+    private function isNotAllowed()
     {
-        return Mage::getSingleton('admin/session')->isAllowed('catalog/products/edit_locked_attributes');
+        return !Mage::getSingleton('admin/session')->isAllowed('catalog/products/edit_locked_attributes');
     }
 }

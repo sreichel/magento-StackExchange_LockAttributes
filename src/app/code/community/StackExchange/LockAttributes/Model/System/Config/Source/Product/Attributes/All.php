@@ -9,11 +9,14 @@
 
 /**
  * System config
+ * @SuppressWarnings(PHPMD.CamelCaseClassName)
  */
 class StackExchange_LockAttributes_Model_System_Config_Source_Product_Attributes_All
 {
-    /** @var $_options array of options */
-    protected $_options;
+    /**
+     * @var array $options
+     */
+    private $options;
 
     /**
      * Get all product attributes with frontend label
@@ -22,21 +25,21 @@ class StackExchange_LockAttributes_Model_System_Config_Source_Product_Attributes
      */
     public function toOptionArray()
     {
-        if (!$this->_options) {
+        if (!$this->options) {
             $options = Mage::getResourceModel('catalog/product_attribute_collection')
-                ->addFieldToFilter('frontend_label', array('neq' => ''))
+                ->addFieldToFilter('frontend_label', ['neq' => ''])
                 ->setOrder('frontend_label', 'ASC');
 
-            $optionsArray = array();
+            $optionsArray = [];
             foreach ($options as $option) {
                 /* @var Mage_Catalog_Model_Resource_Eav_Attribute $option */
-                $optionsArray[] = array(
+                $optionsArray[] = [
                     'label' => $option->getFrontendLabel(),
                     'value' => $option->getAttributeCode()
-                );
+                ];
             }
-            $this->_options = $optionsArray;
+            $this->options = $optionsArray;
         }
-        return $this->_options;
+        return $this->options;
     }
 }

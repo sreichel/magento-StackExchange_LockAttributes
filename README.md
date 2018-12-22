@@ -35,7 +35,7 @@ modman clone https://github.com/sreichel/magento-StackExchange_LockAttributes.gi
 ```
 - via composer
 ```
-composer require mse-sv3n/lock-attributes
+composer require mse-sv3n/m1-lock-attributes
 ```
 
 #### Uninstallation
@@ -45,7 +45,7 @@ modman remove magento-stackexchange-lockattributes
 ```
 - via composer
 ```
-composer remove mse-sv3n/lock-attributes
+composer remove mse-sv3n/m1-lock-attributes
 ```
 
 ### Usage

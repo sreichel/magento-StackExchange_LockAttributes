@@ -1,6 +1,6 @@
 # LockAttributes Magento 1 Extension
 
-This extension adds availability to prevent product attributes from editing in admin backend.
+Prevent editing product attributes in admin backend.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7e099f0fcf44a548dc29b94b7be3f37)](https://www.codacy.com/app/sreichel/magento-StackExchange_LockAttributes?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sreichel/magento-StackExchange_LockAttributes&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/de5eb4d457411e58c485/maintainability)](https://codeclimate.com/github/sreichel/magento-StackExchange_LockAttributes/maintainability)

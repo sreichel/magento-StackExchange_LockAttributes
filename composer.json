@@ -2,7 +2,7 @@
     "name": "mse-sv3n/m1-lock-attributes",
     "type": "magento-module",
     "license": "OSL-3.0",
-    "description": "This extension adds availability to prevent product attributes from editing in admin backend.",
+    "description": "Prevent editing product attributes in admin backend.",
     "homepage": "https://magento.stackexchange.com/questions/784/read-only-product-backend-attribute",
     "authors": [
         {
